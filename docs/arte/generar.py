@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fuente única del encargo de arte de «Queso o Mentira», por skins.
+"""Fuente única del encargo de arte de «Tahúres», por skins.
 
 Ejecutar:  python3 docs/arte/generar.py
 Escribe, para cada skin, en docs/arte/<skin>/:

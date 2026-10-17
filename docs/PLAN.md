@@ -1,4 +1,4 @@
-# Queso o Mentira — Plan de mejora
+# Tahúres — Plan de mejora
 
 Estado de partida (oct 2026): la copia local es **v1.6.1** (con jugadores «tramposos» y botón de vista GM); GitHub sigue en **v1.3.1**; `module.json` dice **0.7.0**. Un solo script de ~820 líneas, ventanas V1 (`Application`/`FormApplication`), compat declarada V11–V12.
 
@@ -12,7 +12,7 @@ Objetivo: que lo que hay sea correcto, seguro y mantenible antes de añadir nada
 
 1. **Motor de reglas puro** (`scripts/engine/liars-dice.js`, sin dependencias de Foundry): recuento con comodines, validación de apuestas, resolución de «¡Mentira!» y «Calzar», pérdida de dados/eliminación, siguiente turno, probabilidad binomial y decisión de las tres IA.
 2. **Tests** con `node --test` (`tests/engine.test.mjs`), sin dependencias.
-3. **El módulo usa el motor**: `queso-mentira.js` deja de tener la lógica duplicada.
+3. **El módulo usa el motor**: `mr-tahures.js` deja de tener la lógica duplicada.
 4. **Validación en el GM** de cada acción de jugador: solo actúa quien es dueño del actor al que le toca, y solo el GM activo procesa (hoy, con dos GM conectados, todo se ejecuta dos veces; y cualquier cliente puede enviar `callerIx` arbitrario).
 5. **Higiene del repo**: `module.json` a la versión real, `LICENSE` (el README lo cita y no existe), `.gitignore`, `package.json` mínimo, quitar el `.zip` del repo (lo genera la release), README sin el enlace roto del manifiesto.
 6. **Sincronizar con GitHub**: la copia local manda; subir tras tu visto bueno.
@@ -47,11 +47,11 @@ Hecho y probado en Foundry 13.351: calzar y palifico clásicos como opción (sel
 
 ## Fase 4 — Plataforma multijuego (hecha en lo esencial, v2.2.0)
 
-Hecho y probado en Foundry 13.351: registro de juegos (`core.js`, `games/*`), selector de juego con opciones propias, API `game.modules.get("queso-mentira").api`, guía en `docs/JUEGOS.md`. **Pendiente:** hooks públicos (`queso-mentira.roundEnd`…), temas de mesa, registro desde módulos de terceros, macro de apertura.
+Hecho y probado en Foundry 13.351: registro de juegos (`core.js`, `games/*`), selector de juego con opciones propias, API `game.modules.get("mr-tahures").api`, guía en `docs/JUEGOS.md`. **Pendiente:** hooks públicos (`mr-tahures.roundEnd`…), temas de mesa, registro desde módulos de terceros, macro de apertura.
 
 
-- Registro de juegos (`QuesoMentira.registerGame({id, name, engine, ui})`) para que cada juego sea un motor puro + una vista.
-- API pública y hooks (`queso-mentira.roundEnd`, `queso-mentira.gameEnd`, `queso-mentira.bet`) para que los sistemas de Manu enganchen recompensas.
+- Registro de juegos (`Tahures.registerGame({id, name, engine, ui})`) para que cada juego sea un motor puro + una vista.
+- API pública y hooks (`mr-tahures.roundEnd`, `mr-tahures.gameEnd`, `mr-tahures.bet`) para que los sistemas de Manu enganchen recompensas.
 - Temas de mesa: pulp-militar (actual), taberna medieval, pirata, noir, cantina sci-fi.
 - Selector de juego en la barra de escenas; macro de apertura.
 
@@ -93,7 +93,7 @@ Todos reutilizan: sentarse a la mesa, turnos, bote, chat de revelación, sonidos
 
 ## Decisiones abiertas
 
-- **[D1]** Renombrar a **MR- Queso o Mentira** (id `mr-queso-o-mentira`)? Rompe instalaciones existentes. Recomendado: mantener el id `queso-mentira`, cambiar solo el título a «MR- Queso o Mentira».
+- **[D1] Resuelta:** el módulo se llama **MR- Tahúres** (id `mr-tahures`, antes «Queso o Mentira»).
 - **[D2]** Reglas por defecto: ¿mantener las de la casa actuales o pasar a las clásicas? Recomendado: mantener las actuales por defecto y ofrecer el selector (Fase 3).
 - **[D3]** ¿Un módulo con todos los juegos o módulos separados por juego? Recomendado: uno solo con registro de juegos.
 - **[D4]** Fecha tope de compat: V13 mínimo, V14 verificado. ¿Se abandona V11/V12?
@@ -102,5 +102,5 @@ Todos reutilizan: sentarse a la mesa, turnos, bote, chat de revelación, sonidos
 
 ## Estado visual (2026-10-17, v2.4.0)
 
-Cinco skins integradas con arte propio (`assets/skins/<skin>/`, 126 imágenes): garito, taberna, pirata, oeste, neón. CSS en `styles/queso-mentira.css` (variables por skin) y `styles/skins.css` (generado por `docs/arte/gen_skins_css.py`). Sin arte, cada skin cae al diseño CSS puro.
+Cinco skins integradas con arte propio (`assets/skins/<skin>/`, 126 imágenes): garito, taberna, pirata, oeste, neón. CSS en `styles/mr-tahures.css` (variables por skin) y `styles/skins.css` (generado por `docs/arte/gen_skins_css.py`). Sin arte, cada skin cae al diseño CSS puro.
 **Pendiente de arte:** parches A (3 texturas) y B (32 dados) en `docs/arte/parches/`; al llegar basta con sustituir los archivos del mismo nombre. **Hecho (v2.5.0):** 17 iconos SVG de un color (`assets/icons/`, generador `docs/arte/gen_iconos.py`, tintables con `currentColor`): 6 acciones, 3 jugadores y 8 emblemas de juego (los de Fase 5 ya están listos). **Pendiente de diseño:** dado oculto de rivales, banner del README, escena de mesa como acción del GM, tipografías propias.

@@ -4,7 +4,7 @@
 
 ---
 
-You already delivered the five skin packs of **Queso o Mentira** and they pass the automatic check. Comparing the five skins side by side I found a design problem: **the dice of `garito`, `taberna`, `pirata` and `oeste` are practically the same object** — same tan cube, nearly the same silhouette (within 1-5 %), mean body colour within ±5/255 — and only the pip colour changes. Each skin must have its own physical die. (`neon` is fine; do not touch it.) Speak to me in Spanish; write image prompts in English.
+You already delivered the five skin packs of **Tahúres** and they pass the automatic check. Comparing the five skins side by side I found a design problem: **the dice of `garito`, `taberna`, `pirata` and `oeste` are practically the same object** — same tan cube, nearly the same silhouette (within 1-5 %), mean body colour within ±5/255 — and only the pip colour changes. Each skin must have its own physical die. (`neon` is fine; do not touch it.) Speak to me in Spanish; write image prompts in English.
 
 ## What to redo
 The 8 dice files of each of these four skins = **32 files**, same paths, 512×512 PNG RGBA, transparent, same margins as the original spec, `dice/die-1.png … die-6.png`, `die-1-wild.png`, `die-hidden.png`. Keep the same camera (almost straight from above, top face large, slight 3/4 bevel), upper-left light, no shadow, no text, very large high-contrast pips readable at 24 px, standard pip layout, and the same rule as before: build ONE new blank cube per skin and composite the same pip sprite for all faces so the set is pixel-consistent. Keep the wild and hidden concepts of each skin, adapted to the new body.

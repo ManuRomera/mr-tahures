@@ -2,7 +2,7 @@
 // Un juego es un objeto registrado con registerGame() (ver games/*.js y docs/JUEGOS.md).
 import * as Engine from "./engine/liars-dice.js";
 
-export const ID = "mr-queso-o-mentira";
+export const ID = "mr-tahures";
 export const SOCKET = `module.${ID}`;
 export const DEFAULT_GAME = "liars-dice";
 export const OWNER = () => CONST.DOCUMENT_OWNERSHIP_LEVELS.OWNER;
@@ -29,7 +29,7 @@ export const GAMES = new Map();
 export const registerGame = def => { GAMES.set(def.id, def); return def; };
 export const gameOf = S => GAMES.get(S?.game ?? DEFAULT_GAME);
 
-/** Puente con las ventanas (lo rellena mr-queso-o-mentira.js). */
+/** Puente con las ventanas (lo rellena mr-tahures.js). */
 export const bridge = { refresh() {}, openGMTray() {}, openTray() {} };
 
 /** Lo que ESTE cliente puede ver: { own: {actorId: dados}, all: {actorId: dados} | null } */

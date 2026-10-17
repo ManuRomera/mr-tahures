@@ -1,11 +1,11 @@
 <p align="center">
-  <img src="docs/img/banner.webp" alt="MR- Queso o Mentira — juegos de taberna para Foundry VTT" width="100%">
+  <img src="docs/img/banner.webp" alt="MR- Tahúres — juegos de taberna para Foundry VTT" width="100%">
 </p>
 
 <p align="center">
-  <a href="https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ManuRomera/mr-queso-o-mentira?style=for-the-badge&color=c58a2b&label=release"></a>
+  <a href="https://github.com/ManuRomera/mr-tahures/releases/latest"><img alt="Latest release" src="https://img.shields.io/github/v/release/ManuRomera/mr-tahures?style=for-the-badge&color=c58a2b&label=release"></a>
   <img alt="Foundry VTT v13" src="https://img.shields.io/badge/Foundry%20VTT-v13-57d8c8?style=for-the-badge">
-  <a href="https://github.com/ManuRomera/mr-queso-o-mentira/releases"><img alt="Downloads" src="https://raw.githubusercontent.com/ManuRomera/ManuRomera/main/badges/descargas/mr-queso-o-mentira.svg"></a>
+  <a href="https://github.com/ManuRomera/mr-tahures/releases"><img alt="Downloads" src="https://raw.githubusercontent.com/ManuRomera/ManuRomera/main/badges/descargas/mr-tahures.svg"></a>
   <img alt="System agnostic" src="https://img.shields.io/badge/system-agnostic-2b3245?style=for-the-badge">
   <a href="LICENSE"><img alt="MIT license" src="https://img.shields.io/badge/license-MIT-2b3245?style=for-the-badge"></a>
 </p>
@@ -21,10 +21,10 @@
 En Foundry: **Add-on Modules → Install Module → Manifest URL**, pega:
 
 ```
-https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest/download/module.json
+https://github.com/ManuRomera/mr-tahures/releases/latest/download/module.json
 ```
 
-Activa **MR- Queso o Mentira** en tu mundo y abre la mesa desde el botón del queso en los **Controles de token** (solo el Director de Juego). Las actualizaciones llegan desde el botón *Update* de Foundry.
+Activa **MR- Tahúres** en tu mundo y abre la mesa desde el botón de los dados en los **Controles de token** (solo el Director de Juego). Las actualizaciones llegan desde el botón *Update* de Foundry.
 
 <p align="center">
   <img src="docs/img/hero.webp" alt="Partida de Dado del Mentiroso en El Garito: bandeja del Director con todas las manos, chat con la revelación y fichas de casino" width="100%">
@@ -70,7 +70,7 @@ El mismo juego, vestido para cada mesa. Se elige en el propio formulario de part
 
 ## 🕹️ Cómo se juega
 
-1. **GM:** con los actores de la escena en tokens, pulsa el botón del queso (Controles de token).
+1. **GM:** con los actores de la escena en tokens, pulsa el botón de los dados (Controles de token).
 2. Elige **juego**, **skin** y el **modo** de cada actor: Humano, Director de Juego (tú) o una de las IAs. Ajusta dados o vidas iniciales, reglas y la entrada del bote.
 3. Se sortea quién empieza y cada humano recibe su **bandeja** con su mano; el GM ve todas.
 4. En tu turno: **Subir / ¡Mentira! / Calzar** en el Dado del Mentiroso, o **Anunciar / ¡Dudo! / Acepto y tiro** en Mia.
@@ -78,7 +78,7 @@ El mismo juego, vestido para cada mesa. Se elige en el propio formulario de part
 ## 🧰 API
 
 ```js
-const api = game.modules.get("mr-queso-o-mentira").api;
+const api = game.modules.get("mr-tahures").api;
 api.GAMES;            // Map con los juegos registrados
 api.registerGame(def); // registra un juego (ver docs/JUEGOS.md)
 ```
@@ -97,12 +97,12 @@ MIT © 2026 Manuel Romera Chinchilla.
 
 ## 🇬🇧 English
 
-**MR- Queso o Mentira** brings tavern bluffing games to Foundry VTT, dressed in the setting your table needs. System agnostic, no dependencies, Foundry **v13**.
+**MR- Tahúres** brings tavern bluffing games to Foundry VTT, dressed in the setting your table needs. System agnostic, no dependencies, Foundry **v13**.
 
 **Install:** *Add-on Modules → Install Module → Manifest URL*:
 
 ```
-https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest/download/module.json
+https://github.com/ManuRomera/mr-tahures/releases/latest/download/module.json
 ```
 
 ### Games

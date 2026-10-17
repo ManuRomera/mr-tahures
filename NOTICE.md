@@ -1,6 +1,6 @@
 # Avisos y créditos
 
-**MR- Queso o Mentira** © 2026 Manuel Romera Chinchilla — licencia MIT (ver `LICENSE`).
+**MR- Tahúres** © 2026 Manuel Romera Chinchilla — licencia MIT (ver `LICENSE`).
 
 ## Arte
 - Las imágenes de `assets/skins/` (dados, cubiletes, texturas, botones, fichas, escenas y emblemas) se generaron con herramientas de IA para este módulo, bajo la dirección y revisión del autor, y se procesaron con los scripts de `docs/arte/`.

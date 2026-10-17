@@ -1,6 +1,6 @@
 {
-  "id": "mr-queso-o-mentira",
-  "title": "MR- Queso o Mentira",
+  "id": "mr-tahures",
+  "title": "MR- Tahúres",
   "description": "Juegos de taberna para Foundry VTT: Dado del Mentiroso y Mia/Meyer, con cinco skins (noir, fantasía oscura, piratas, Oeste y ciberpunk), IA con personalidad, manos privadas y bote con dinero del actor. Agnóstico de sistema.",
   "version": "3.0.0",
   "authors": [
@@ -15,10 +15,10 @@
   },
   "socket": true,
   "esmodules": [
-    "scripts/mr-queso-o-mentira.js"
+    "scripts/mr-tahures.js"
   ],
   "styles": [
-    "styles/mr-queso-o-mentira.css",
+    "styles/mr-tahures.css",
     "styles/iconos.css",
     "styles/skins.css"
   ],
@@ -35,11 +35,11 @@
     }
   ],
   "packs": [],
-  "manifest": "https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest/download/module.json",
-  "download": "https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest/download/mr-queso-o-mentira.zip",
-  "url": "https://github.com/ManuRomera/mr-queso-o-mentira",
-  "bugs": "https://github.com/ManuRomera/mr-queso-o-mentira/issues",
-  "readme": "https://github.com/ManuRomera/mr-queso-o-mentira#readme",
-  "changelog": "https://github.com/ManuRomera/mr-queso-o-mentira/blob/main/CHANGELOG.md",
+  "manifest": "https://github.com/ManuRomera/mr-tahures/releases/latest/download/module.json",
+  "download": "https://github.com/ManuRomera/mr-tahures/releases/latest/download/mr-tahures.zip",
+  "url": "https://github.com/ManuRomera/mr-tahures",
+  "bugs": "https://github.com/ManuRomera/mr-tahures/issues",
+  "readme": "https://github.com/ManuRomera/mr-tahures#readme",
+  "changelog": "https://github.com/ManuRomera/mr-tahures/blob/main/CHANGELOG.md",
   "license": "MIT"
 }

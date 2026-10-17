@@ -4,7 +4,7 @@
 
 ---
 
-You already delivered the five skin packs of **Queso o Mentira** and all five passed the automatic check. I then reviewed every image by eye (tiling them 2×2, comparing the five skins side by side) and found **three real defects in three texture files**. Redo ONLY these three files. Keep exactly the same path, pixel size (1024×1024), format (WebP, quality 86, method 6, RGB with no alpha) and seamless tiling. Do not touch anything else. Speak to me in Spanish; write image prompts in English.
+You already delivered the five skin packs of **Tahúres** and all five passed the automatic check. I then reviewed every image by eye (tiling them 2×2, comparing the five skins side by side) and found **three real defects in three texture files**. Redo ONLY these three files. Keep exactly the same path, pixel size (1024×1024), format (WebP, quality 86, method 6, RGB with no alpha) and seamless tiling. Do not touch anything else. Speak to me in Spanish; write image prompts in English.
 
 ## Defect 1 — `assets/skins/oeste/ui/panel.webp`
 **What is wrong:** straight fold/crease lines cross the texture at regular positions, so when tiled they draw a visible grid of squares.

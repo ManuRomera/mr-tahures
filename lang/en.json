@@ -1,5 +1,5 @@
 {
-  "QM.title": "Liar's Dice",
+  "QM.title": "Tahúres",
   "QM.human": "Human",
   "QM.mode.gm": "Game Master",
   "QM.ai.basic": "Basic AI",
@@ -10,7 +10,7 @@
   "QM.settings.onesWild.hint": "If checked, 1s will count as any value (except in Palifico rounds).",
   "QM.settings.palifico.name": "'Palifico' Rule",
   "QM.settings.palifico.hint": "If checked, when a player is down to 1 die, the bet value cannot be changed.",
-  "QM.select.title": "Liar's Dice – Participants",
+  "QM.select.title": "Tahúres – Participants",
   "QM.select.header": "Select Participants",
   "QM.select.actor": "Actor",
   "QM.select.mode": "Mode",

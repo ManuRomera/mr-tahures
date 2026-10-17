@@ -30,14 +30,14 @@ jobs:
       - name: Build Foundry module ZIP
         shell: bash
         run: |
-          zip -r mr-queso-o-mentira.zip module.json scripts styles lang assets templates README.md CHANGELOG.md LICENSE NOTICE.md -x '*.DS_Store'
-          unzip -l mr-queso-o-mentira.zip | grep -E "assets/skins/garito/dice/die-1.png|templates/dice-tray.html|styles/skins.css|scripts/engine/mia.js" | wc -l | grep -q 4
+          zip -r mr-tahures.zip module.json scripts styles lang assets templates README.md CHANGELOG.md LICENSE NOTICE.md -x '*.DS_Store'
+          unzip -l mr-tahures.zip | grep -E "assets/skins/garito/dice/die-1.png|templates/dice-tray.html|styles/skins.css|scripts/engine/mia.js" | wc -l | grep -q 4
 
       - name: Extract release notes from CHANGELOG
         shell: bash
         run: |
           awk -v v="${{ steps.version.outputs.version }}" '$0 ~ "^## "v" " {f=1; next} /^## / {f=0} f' CHANGELOG.md > notes.md
-          [ -s notes.md ] || echo "MR- Queso o Mentira v${{ steps.version.outputs.version }}" > notes.md
+          [ -s notes.md ] || echo "MR- Tahúres v${{ steps.version.outputs.version }}" > notes.md
 
       - name: Create or update GitHub Release
         env:
@@ -48,12 +48,12 @@ jobs:
         run: |
           if gh release view "$TAG" >/dev/null 2>&1; then
             echo "Release $TAG already exists; refreshing assets."
-            gh release upload "$TAG" mr-queso-o-mentira.zip module.json --clobber
+            gh release upload "$TAG" mr-tahures.zip module.json --clobber
             gh release edit "$TAG" --notes-file notes.md
           else
             echo "Creating release $TAG."
-            gh release create "$TAG" mr-queso-o-mentira.zip module.json \
+            gh release create "$TAG" mr-tahures.zip module.json \
               --target "$GITHUB_SHA" \
-              --title "MR- Queso o Mentira v$VERSION" \
+              --title "MR- Tahúres v$VERSION" \
               --notes-file notes.md
           fi

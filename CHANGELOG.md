@@ -2,7 +2,7 @@
 
 ## 3.0.0 — 2026-10-17
 
-Primera versión pública con la marca MR: el antiguo «Queso o Mentira» reescrito de arriba abajo. Cambia el id del módulo (`queso-mentira` → `mr-queso-o-mentira`); no hay migración, la partida en curso de versiones anteriores no se conserva.
+Primera versión pública con la marca MR: el antiguo «Queso o Mentira» reescrito y rebautizado de arriba abajo. Cambia el id del módulo (`queso-mentira` → `mr-tahures`) y el nombre; no hay migración, la partida en curso de versiones anteriores no se conserva.
 
 - 🎲 **Registro de juegos** y dos juegos: Dado del Mentiroso y **Mia / Meyer** (nuevo).
 - 🎭 **Cinco skins** con arte propio: El Garito, La Taberna, El Camarote, El Saloon y La Cantina Neón; selector en el formulario y en los ajustes.

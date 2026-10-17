@@ -3,7 +3,7 @@
 
 Ejecutar:  python3 docs/arte/gen_skins_css.py
 Para una skin nueva: carpeta assets/skins/<id>/ con la estructura del encargo (docs/arte/LEEME.md),
-una entrada en SKINS de aquí y otra de colores en styles/mr-queso-o-mentira.css.
+una entrada en SKINS de aquí y otra de colores en styles/mr-tahures.css.
 Los parches de arte que sustituyen archivos con el mismo nombre NO requieren regenerar nada.
 """
 from pathlib import Path

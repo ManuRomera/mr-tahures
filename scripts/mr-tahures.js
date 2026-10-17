@@ -1,6 +1,6 @@
 /****************************************************
- * Queso o Mentira – v2.2.0 (juegos de taberna)
- * • Registro de juegos (core.js + games/*): Dado del Mentiroso y Mia/Meyer. API: game.modules.get("mr-queso-o-mentira").api
+ * MR- Tahúres – v3.0.0 (juegos de dados de taberna)
+ * • Registro de juegos (core.js + games/*): Dado del Mentiroso y Mia/Meyer. API: game.modules.get("mr-tahures").api
  * • v2.1: calzar/palifico clásicos, IA con personalidad, bote con dinero.
  * • v2.0: ApplicationV2, manos privadas por socket dirigido, revelación en el chat, V13/V14.
  ****************************************************/
@@ -145,7 +145,7 @@ class GMDiceTrayApp extends HandlebarsApplicationMixin(ApplicationV2) {
 // 2. MÓDULO
 // ===================================================================================
 
-class QuesoMentira {
+class Tahures {
   static openApps = {};
 
   static initialize() {
@@ -261,4 +261,4 @@ class QuesoMentira {
   }
 }
 
-Hooks.once("setup", () => QuesoMentira.initialize());
+Hooks.once("setup", () => Tahures.initialize());

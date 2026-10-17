@@ -1,5 +1,5 @@
 {
-  "name": "mr-queso-o-mentira",
+  "name": "mr-tahures",
   "private": true,
   "type": "module",
   "scripts": { "test": "node --test tests/*.test.mjs" }
