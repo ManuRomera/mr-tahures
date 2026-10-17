@@ -1,0 +1,21 @@
+/* GENERADO por docs/arte/gen_iconos.py — no editar a mano.
+   Iconos de un solo color: <i class="qm-ico" data-ico="subir"></i>, toman el color del texto. */
+.qm-ico { display: inline-block; width: 1.15em; height: 1.15em; vertical-align: -.2em; flex: none; background-color: currentColor; -webkit-mask: var(--ico) center / contain no-repeat; mask: var(--ico) center / contain no-repeat; }
+.qm-ico.qm-ico-lg { width: 2em; height: 2em; }
+.qm-ico[data-ico="subir"] { --ico: url("../assets/icons/actions/subir.svg"); }
+.qm-ico[data-ico="mentira"] { --ico: url("../assets/icons/actions/mentira.svg"); }
+.qm-ico[data-ico="calzar"] { --ico: url("../assets/icons/actions/calzar.svg"); }
+.qm-ico[data-ico="dudar"] { --ico: url("../assets/icons/actions/dudar.svg"); }
+.qm-ico[data-ico="aceptar"] { --ico: url("../assets/icons/actions/aceptar.svg"); }
+.qm-ico[data-ico="anunciar"] { --ico: url("../assets/icons/actions/anunciar.svg"); }
+.qm-ico[data-ico="humano"] { --ico: url("../assets/icons/players/humano.svg"); }
+.qm-ico[data-ico="ia"] { --ico: url("../assets/icons/players/ia.svg"); }
+.qm-ico[data-ico="gm"] { --ico: url("../assets/icons/players/gm.svg"); }
+.qm-ico[data-ico="liars-dice"] { --ico: url("../assets/icons/games/liars-dice.svg"); }
+.qm-ico[data-ico="mia"] { --ico: url("../assets/icons/games/mia.svg"); }
+.qm-ico[data-ico="diez-mil"] { --ico: url("../assets/icons/games/diez-mil.svg"); }
+.qm-ico[data-ico="capitan-barco"] { --ico: url("../assets/icons/games/capitan-barco.svg"); }
+.qm-ico[data-ico="chuza"] { --ico: url("../assets/icons/games/chuza.svg"); }
+.qm-ico[data-ico="siete-y-media"] { --ico: url("../assets/icons/games/siete-y-media.svg"); }
+.qm-ico[data-ico="tabas"] { --ico: url("../assets/icons/games/tabas.svg"); }
+.qm-ico[data-ico="pulso"] { --ico: url("../assets/icons/games/pulso.svg"); }

@@ -1,0 +1,38 @@
+[
+ {
+  "path": "assets/skins/oeste/ui/panel.webp",
+  "w": 1024,
+  "h": 1024,
+  "fmt": "WEBP",
+  "bg": "opaque",
+  "tile": true,
+  "margin": 0,
+  "group": "ui",
+  "uso": "Fondo de paneles de lectura: formulario de partida y mensajes de chat.",
+  "prompt": "Seamless tileable texture. Brittle wanted-poster paper with fold lines, darkened edges and faint soot marks (no text, no portraits). Completely free of text, folds that break the tile and vignette; very low contrast so text on top stays readable."
+ },
+ {
+  "path": "assets/skins/garito/ui/mesa.webp",
+  "w": 1024,
+  "h": 1024,
+  "fmt": "WEBP",
+  "bg": "opaque",
+  "tile": true,
+  "margin": 0,
+  "group": "ui",
+  "uso": "Fondo de la zona de juego (dados y estado).",
+  "prompt": "Seamless tileable texture. Worn green baize card-table cloth with faint cigarette burns and pale glass-ring stains. Flat lighting so it tiles, no objects, low contrast, no vignette."
+ },
+ {
+  "path": "assets/skins/neon/ui/panel.webp",
+  "w": 1024,
+  "h": 1024,
+  "fmt": "WEBP",
+  "bg": "opaque",
+  "tile": true,
+  "margin": 0,
+  "group": "ui",
+  "uso": "Fondo de paneles de lectura: formulario de partida y mensajes de chat.",
+  "prompt": "Seamless tileable texture. Dark smoked-glass panel with barely visible scanlines and a faint hex grid, very low contrast. Completely free of text, folds that break the tile and vignette; very low contrast so text on top stays readable."
+ }
+]

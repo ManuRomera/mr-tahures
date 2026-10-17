@@ -1,0 +1,59 @@
+<div class="qm-tray-container">
+    <section class="all-dice">
+        {{#each players}}
+        <div class="player-hand">
+            <header>
+                <h3>{{this.name}}</h3>
+                <span class="qm-lives"><b>{{this.dadosRestantes}}</b></span>
+            </header>
+            <div class="dice-area">
+                {{#each this.diceData}}
+                <span class="qm-die" data-v="{{this.value}}" {{#if this.wild}}data-wild{{/if}} role="img" aria-label="{{localize "QM.tray.dieAlt" value=this.value}}"></span>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </section>
+
+    <section class="game-status">
+        {{#if pot}}<div class="qm-pot">{{localize "QM.tray.pot"}}: {{pot}}</div>{{/if}}
+        <div class="bet-info">
+            <h4>{{localize "QM.tray.currentBet"}}</h4>
+            {{#if bet}}
+            <div class="bet-display">{{bet.cantidad}} x <span class="qm-die qm-die-sm" data-v="{{bet.valor}}" {{#if bet.wild}}data-wild{{/if}} role="img" aria-label="{{localize "QM.tray.dieAlt" value=bet.valor}}"></span></div>
+            {{else}}
+            <div class="bet-display">{{localize "QM.tray.noBetYet"}}</div>
+            {{/if}}
+        </div>
+
+        {{#if gmActor}}
+        {{#if isMyTurn}}
+        <div class="actions gm-actions">
+            <button type="button" class="qm-btn" data-action="raise">
+                <i class="qm-ico" data-ico="subir"></i> {{localize "QM.chat.raiseButton"}}
+            </button>
+            <button type="button" class="qm-btn" data-action="lie" {{#unless bet}}disabled{{/unless}}>
+                <i class="qm-ico" data-ico="mentira"></i> {{localize "QM.chat.lieButton"}}
+            </button>
+            <button type="button" class="qm-btn" data-action="spoton" {{#unless bet}}disabled{{/unless}}>
+                <i class="qm-ico" data-ico="calzar"></i> {{localize "QM.chat.spotOnButton"}}
+            </button>
+        </div>
+        {{else}}
+        <div class="wait-message">
+            <p>{{localize "QM.tray.waitingTurn"}}</p>
+        </div>
+        {{/if}}
+
+        <div class="gm-utility-actions">
+            <button type="button" class="qm-btn" data-action="toggle-gm-view">
+                {{#if gmAsPlayer}}
+                    <i class="fas fa-eye"></i> {{localize "QM.gm.showAll"}}
+                {{else}}
+                    <i class="fas fa-eye-slash"></i> {{localize "QM.gm.playAsPlayer"}}
+                {{/if}}
+            </button>
+        </div>
+        {{/if}}
+    </section>
+</div>

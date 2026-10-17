@@ -1,0 +1,6 @@
+{
+  "name": "mr-queso-o-mentira",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/" }
+}

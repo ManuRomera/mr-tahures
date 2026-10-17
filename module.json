@@ -1,0 +1,45 @@
+{
+  "id": "mr-queso-o-mentira",
+  "title": "MR- Queso o Mentira",
+  "description": "Juegos de taberna para Foundry VTT: Dado del Mentiroso y Mia/Meyer, con cinco skins (noir, fantasía oscura, piratas, Oeste y ciberpunk), IA con personalidad, manos privadas y bote con dinero del actor. Agnóstico de sistema.",
+  "version": "3.0.0",
+  "authors": [
+    {
+      "name": "Manu Romera",
+      "url": "https://github.com/ManuRomera"
+    }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "socket": true,
+  "esmodules": [
+    "scripts/mr-queso-o-mentira.js"
+  ],
+  "styles": [
+    "styles/mr-queso-o-mentira.css",
+    "styles/iconos.css",
+    "styles/skins.css"
+  ],
+  "languages": [
+    {
+      "lang": "es",
+      "name": "Español",
+      "path": "lang/es.json"
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "packs": [],
+  "manifest": "https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest/download/module.json",
+  "download": "https://github.com/ManuRomera/mr-queso-o-mentira/releases/latest/download/mr-queso-o-mentira.zip",
+  "url": "https://github.com/ManuRomera/mr-queso-o-mentira",
+  "bugs": "https://github.com/ManuRomera/mr-queso-o-mentira/issues",
+  "readme": "https://github.com/ManuRomera/mr-queso-o-mentira#readme",
+  "changelog": "https://github.com/ManuRomera/mr-queso-o-mentira/blob/main/CHANGELOG.md",
+  "license": "MIT"
+}

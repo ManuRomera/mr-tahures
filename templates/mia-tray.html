@@ -1,0 +1,75 @@
+<div class="qm-tray-container qm-mia">
+
+    {{#if player.isCheater}}
+    <section class="all-dice">
+        {{#each allPlayersData}}
+        <div class="player-hand">
+            <header>
+                <h3>{{this.name}}</h3>
+                <span class="qm-lives"><b>{{this.dadosRestantes}}</b></span>
+            </header>
+            <div class="dice-area">
+                {{#each this.diceData}}
+                <span class="qm-die" data-v="{{this.value}}" {{#if this.wild}}data-wild{{/if}} role="img" aria-label="{{localize "QM.tray.dieAlt" value=this.value}}"></span>
+                {{/each}}
+            </div>
+        </div>
+        {{/each}}
+    </section>
+    {{else}}
+    <section class="my-dice">
+        <header>
+            <h3>{{localize "QM.mia.yourRoll"}}</h3>
+            <span class="qm-lives"><b>{{player.dadosRestantes}}</b></span>
+        </header>
+        <div class="dice-area">
+            {{#each player.diceData}}
+            <span class="qm-die" data-v="{{this.value}}" {{#if this.wild}}data-wild{{/if}} role="img" aria-label="{{localize "QM.tray.dieAlt" value=this.value}}"></span>
+            {{else}}
+            <div><span class="qm-cup" aria-hidden="true"></span><p class="wait-message">{{localize "QM.mia.noRoll"}}</p></div>
+            {{/each}}
+        </div>
+    </section>
+    {{/if}}
+
+    <section class="game-status">
+        {{#if pot}}<div class="qm-pot">{{localize "QM.tray.pot"}}: {{pot}}</div>{{/if}}
+        <div class="bet-info">
+            <h4>{{localize "QM.mia.currentAnnouncement"}}</h4>
+            {{#if announced}}
+            <div class="bet-display">
+                {{#each announced.diceData}}<span class="qm-die qm-die-sm" data-v="{{this.value}}" {{#if this.wild}}data-wild{{/if}} role="img" aria-label="{{localize "QM.tray.dieAlt" value=this.value}}"></span>{{/each}}
+                <span>{{announced.label}}</span>
+            </div>
+            <div class="qm-by">{{announced.by}}</div>
+            {{else}}
+            <div class="bet-display">{{localize "QM.mia.nothingYet"}}</div>
+            {{/if}}
+        </div>
+
+        {{#if isMyTurn}}
+        <div class="actions">
+            {{#if canAnnounce}}
+            <button type="button" class="qm-btn" data-action="announce">
+                <i class="qm-ico" data-ico="anunciar"></i> {{localize "QM.mia.announce"}}
+            </button>
+            {{/if}}
+            {{#if canDoubt}}
+            <button type="button" class="qm-btn" data-action="doubt">
+                <i class="qm-ico" data-ico="dudar"></i> {{localize "QM.mia.doubt"}}
+            </button>
+            {{/if}}
+            {{#if canAccept}}
+            <button type="button" class="qm-btn" data-action="accept">
+                <i class="qm-ico" data-ico="aceptar"></i> {{localize "QM.mia.accept"}}
+            </button>
+            {{/if}}
+        </div>
+        {{else}}
+        <div class="wait-message">
+            <p>{{localize "QM.tray.waitingTurn"}}</p>
+        </div>
+        {{/if}}
+    </section>
+
+</div>

@@ -1,0 +1,266 @@
+/* GENERADO por docs/arte/gen_skins_css.py — no editar a mano. Conecta el arte de assets/skins/<skin>/ con la interfaz. */
+
+/* ---- garito ---- */
+body[data-qm-skin="garito"] {
+  --qm-art-header: url('../assets/skins/garito/ui/cabecera.webp');
+  --qm-art-frame: url('../assets/skins/garito/ui/marco.webp');
+  --qm-art-table: url('../assets/skins/garito/ui/mesa.webp');
+  --qm-art-panel: url('../assets/skins/garito/ui/panel.webp');
+  --qm-art-btn1: url('../assets/skins/garito/ui/boton-primario.webp');
+  --qm-art-btn2: url('../assets/skins/garito/ui/boton-peligro.webp');
+  --qm-art-btn3: url('../assets/skins/garito/ui/boton-secundario.webp');
+  --qm-art-corner: url('../assets/skins/garito/ui/esquina.png');
+  --qm-art-divider: url('../assets/skins/garito/ui/divisor.png');
+  --qm-art-life: url('../assets/skins/garito/tokens/vida.png');
+  --qm-art-lost: url('../assets/skins/garito/tokens/perdido.png');
+  --qm-art-bag: url('../assets/skins/garito/tokens/bolsa.png');
+  --qm-art-cup: url('../assets/skins/garito/cup/cubilete-cerrado.png');
+  --qm-art-cup-up: url('../assets/skins/garito/cup/cubilete-levantado.png');
+  --qm-art-emblem: url('../assets/skins/garito/brand/emblema.png');
+  --qm-frame-shade: rgba(14,9,6,.80);
+  --qm-btn1-fg: #1a0f06;
+  --qm-btn2-fg: #ffe9e0;
+  --qm-btn3-fg: #2a1a0c;
+}
+body[data-qm-skin="garito"] .qm-die {
+  background: center / 118% 118% no-repeat;
+  border-radius: 14%;
+  box-shadow: none;
+  filter: drop-shadow(0 calc(var(--s) * .06) calc(var(--s) * .08) #000b);
+}
+body[data-qm-skin="garito"] .qm-die::before { display: none; }
+body[data-qm-skin="garito"] .qm-die[data-hit] { filter: drop-shadow(0 0 3px var(--qm-accent)) drop-shadow(0 0 1px var(--qm-accent)); outline: 0; }
+body[data-qm-skin="garito"] .qm-die[data-v="1"] { background-image: url('../assets/skins/garito/dice/die-1.png'); }
+body[data-qm-skin="garito"] .qm-die[data-v="2"] { background-image: url('../assets/skins/garito/dice/die-2.png'); }
+body[data-qm-skin="garito"] .qm-die[data-v="3"] { background-image: url('../assets/skins/garito/dice/die-3.png'); }
+body[data-qm-skin="garito"] .qm-die[data-v="4"] { background-image: url('../assets/skins/garito/dice/die-4.png'); }
+body[data-qm-skin="garito"] .qm-die[data-v="5"] { background-image: url('../assets/skins/garito/dice/die-5.png'); }
+body[data-qm-skin="garito"] .qm-die[data-v="6"] { background-image: url('../assets/skins/garito/dice/die-6.png'); }
+body[data-qm-skin="garito"] .qm-die[data-wild] { background-image: url('../assets/skins/garito/dice/die-1-wild.png'); box-shadow: none; }
+body[data-qm-skin="garito"] .qm-die[data-v="0"] { background-image: url('../assets/skins/garito/dice/die-hidden.png'); }
+
+/* ---- taberna ---- */
+body[data-qm-skin="taberna"] {
+  --qm-art-header: url('../assets/skins/taberna/ui/cabecera.webp');
+  --qm-art-frame: url('../assets/skins/taberna/ui/marco.webp');
+  --qm-art-table: url('../assets/skins/taberna/ui/mesa.webp');
+  --qm-art-panel: url('../assets/skins/taberna/ui/panel.webp');
+  --qm-art-btn1: url('../assets/skins/taberna/ui/boton-primario.webp');
+  --qm-art-btn2: url('../assets/skins/taberna/ui/boton-peligro.webp');
+  --qm-art-btn3: url('../assets/skins/taberna/ui/boton-secundario.webp');
+  --qm-art-corner: url('../assets/skins/taberna/ui/esquina.png');
+  --qm-art-divider: url('../assets/skins/taberna/ui/divisor.png');
+  --qm-art-life: url('../assets/skins/taberna/tokens/vida.png');
+  --qm-art-lost: url('../assets/skins/taberna/tokens/perdido.png');
+  --qm-art-bag: url('../assets/skins/taberna/tokens/bolsa.png');
+  --qm-art-cup: url('../assets/skins/taberna/cup/cubilete-cerrado.png');
+  --qm-art-cup-up: url('../assets/skins/taberna/cup/cubilete-levantado.png');
+  --qm-art-emblem: url('../assets/skins/taberna/brand/emblema.png');
+  --qm-frame-shade: rgba(14,10,7,.78);
+  --qm-btn1-fg: #f0dfb0;
+  --qm-btn2-fg: #ffe8e8;
+  --qm-btn3-fg: #1f1208;
+}
+body[data-qm-skin="taberna"] .qm-die {
+  background: center / 118% 118% no-repeat;
+  border-radius: 14%;
+  box-shadow: none;
+  filter: drop-shadow(0 calc(var(--s) * .06) calc(var(--s) * .08) #000b);
+}
+body[data-qm-skin="taberna"] .qm-die::before { display: none; }
+body[data-qm-skin="taberna"] .qm-die[data-hit] { filter: drop-shadow(0 0 3px var(--qm-accent)) drop-shadow(0 0 1px var(--qm-accent)); outline: 0; }
+body[data-qm-skin="taberna"] .qm-die[data-v="1"] { background-image: url('../assets/skins/taberna/dice/die-1.png'); }
+body[data-qm-skin="taberna"] .qm-die[data-v="2"] { background-image: url('../assets/skins/taberna/dice/die-2.png'); }
+body[data-qm-skin="taberna"] .qm-die[data-v="3"] { background-image: url('../assets/skins/taberna/dice/die-3.png'); }
+body[data-qm-skin="taberna"] .qm-die[data-v="4"] { background-image: url('../assets/skins/taberna/dice/die-4.png'); }
+body[data-qm-skin="taberna"] .qm-die[data-v="5"] { background-image: url('../assets/skins/taberna/dice/die-5.png'); }
+body[data-qm-skin="taberna"] .qm-die[data-v="6"] { background-image: url('../assets/skins/taberna/dice/die-6.png'); }
+body[data-qm-skin="taberna"] .qm-die[data-wild] { background-image: url('../assets/skins/taberna/dice/die-1-wild.png'); box-shadow: none; }
+body[data-qm-skin="taberna"] .qm-die[data-v="0"] { background-image: url('../assets/skins/taberna/dice/die-hidden.png'); }
+
+/* ---- pirata ---- */
+body[data-qm-skin="pirata"] {
+  --qm-art-header: url('../assets/skins/pirata/ui/cabecera.webp');
+  --qm-art-frame: url('../assets/skins/pirata/ui/marco.webp');
+  --qm-art-table: url('../assets/skins/pirata/ui/mesa.webp');
+  --qm-art-panel: url('../assets/skins/pirata/ui/panel.webp');
+  --qm-art-btn1: url('../assets/skins/pirata/ui/boton-primario.webp');
+  --qm-art-btn2: url('../assets/skins/pirata/ui/boton-peligro.webp');
+  --qm-art-btn3: url('../assets/skins/pirata/ui/boton-secundario.webp');
+  --qm-art-corner: url('../assets/skins/pirata/ui/esquina.png');
+  --qm-art-divider: url('../assets/skins/pirata/ui/divisor.png');
+  --qm-art-life: url('../assets/skins/pirata/tokens/vida.png');
+  --qm-art-lost: url('../assets/skins/pirata/tokens/perdido.png');
+  --qm-art-bag: url('../assets/skins/pirata/tokens/bolsa.png');
+  --qm-art-cup: url('../assets/skins/pirata/cup/cubilete-cerrado.png');
+  --qm-art-cup-up: url('../assets/skins/pirata/cup/cubilete-levantado.png');
+  --qm-art-emblem: url('../assets/skins/pirata/brand/emblema.png');
+  --qm-frame-shade: rgba(8,12,12,.78);
+  --qm-btn1-fg: #1a1208;
+  --qm-btn2-fg: #ffeadf;
+  --qm-btn3-fg: #241a0c;
+}
+body[data-qm-skin="pirata"] .qm-die {
+  background: center / 118% 118% no-repeat;
+  border-radius: 14%;
+  box-shadow: none;
+  filter: drop-shadow(0 calc(var(--s) * .06) calc(var(--s) * .08) #000b);
+}
+body[data-qm-skin="pirata"] .qm-die::before { display: none; }
+body[data-qm-skin="pirata"] .qm-die[data-hit] { filter: drop-shadow(0 0 3px var(--qm-accent)) drop-shadow(0 0 1px var(--qm-accent)); outline: 0; }
+body[data-qm-skin="pirata"] .qm-die[data-v="1"] { background-image: url('../assets/skins/pirata/dice/die-1.png'); }
+body[data-qm-skin="pirata"] .qm-die[data-v="2"] { background-image: url('../assets/skins/pirata/dice/die-2.png'); }
+body[data-qm-skin="pirata"] .qm-die[data-v="3"] { background-image: url('../assets/skins/pirata/dice/die-3.png'); }
+body[data-qm-skin="pirata"] .qm-die[data-v="4"] { background-image: url('../assets/skins/pirata/dice/die-4.png'); }
+body[data-qm-skin="pirata"] .qm-die[data-v="5"] { background-image: url('../assets/skins/pirata/dice/die-5.png'); }
+body[data-qm-skin="pirata"] .qm-die[data-v="6"] { background-image: url('../assets/skins/pirata/dice/die-6.png'); }
+body[data-qm-skin="pirata"] .qm-die[data-wild] { background-image: url('../assets/skins/pirata/dice/die-1-wild.png'); box-shadow: none; }
+body[data-qm-skin="pirata"] .qm-die[data-v="0"] { background-image: url('../assets/skins/pirata/dice/die-hidden.png'); }
+
+/* ---- oeste ---- */
+body[data-qm-skin="oeste"] {
+  --qm-art-header: url('../assets/skins/oeste/ui/cabecera.webp');
+  --qm-art-frame: url('../assets/skins/oeste/ui/marco.webp');
+  --qm-art-table: url('../assets/skins/oeste/ui/mesa.webp');
+  --qm-art-panel: url('../assets/skins/oeste/ui/panel.webp');
+  --qm-art-btn1: url('../assets/skins/oeste/ui/boton-primario.webp');
+  --qm-art-btn2: url('../assets/skins/oeste/ui/boton-peligro.webp');
+  --qm-art-btn3: url('../assets/skins/oeste/ui/boton-secundario.webp');
+  --qm-art-corner: url('../assets/skins/oeste/ui/esquina.png');
+  --qm-art-divider: url('../assets/skins/oeste/ui/divisor.png');
+  --qm-art-life: url('../assets/skins/oeste/tokens/vida.png');
+  --qm-art-lost: url('../assets/skins/oeste/tokens/perdido.png');
+  --qm-art-bag: url('../assets/skins/oeste/tokens/bolsa.png');
+  --qm-art-cup: url('../assets/skins/oeste/cup/cubilete-cerrado.png');
+  --qm-art-cup-up: url('../assets/skins/oeste/cup/cubilete-levantado.png');
+  --qm-art-emblem: url('../assets/skins/oeste/brand/emblema.png');
+  --qm-frame-shade: rgba(16,11,7,.78);
+  --qm-btn1-fg: #1d1509;
+  --qm-btn2-fg: #ffe9e2;
+  --qm-btn3-fg: #241707;
+}
+body[data-qm-skin="oeste"] .qm-die {
+  background: center / 118% 118% no-repeat;
+  border-radius: 14%;
+  box-shadow: none;
+  filter: drop-shadow(0 calc(var(--s) * .06) calc(var(--s) * .08) #000b);
+}
+body[data-qm-skin="oeste"] .qm-die::before { display: none; }
+body[data-qm-skin="oeste"] .qm-die[data-hit] { filter: drop-shadow(0 0 3px var(--qm-accent)) drop-shadow(0 0 1px var(--qm-accent)); outline: 0; }
+body[data-qm-skin="oeste"] .qm-die[data-v="1"] { background-image: url('../assets/skins/oeste/dice/die-1.png'); }
+body[data-qm-skin="oeste"] .qm-die[data-v="2"] { background-image: url('../assets/skins/oeste/dice/die-2.png'); }
+body[data-qm-skin="oeste"] .qm-die[data-v="3"] { background-image: url('../assets/skins/oeste/dice/die-3.png'); }
+body[data-qm-skin="oeste"] .qm-die[data-v="4"] { background-image: url('../assets/skins/oeste/dice/die-4.png'); }
+body[data-qm-skin="oeste"] .qm-die[data-v="5"] { background-image: url('../assets/skins/oeste/dice/die-5.png'); }
+body[data-qm-skin="oeste"] .qm-die[data-v="6"] { background-image: url('../assets/skins/oeste/dice/die-6.png'); }
+body[data-qm-skin="oeste"] .qm-die[data-wild] { background-image: url('../assets/skins/oeste/dice/die-1-wild.png'); box-shadow: none; }
+body[data-qm-skin="oeste"] .qm-die[data-v="0"] { background-image: url('../assets/skins/oeste/dice/die-hidden.png'); }
+
+/* ---- neon ---- */
+body[data-qm-skin="neon"] {
+  --qm-art-header: url('../assets/skins/neon/ui/cabecera.webp');
+  --qm-art-frame: url('../assets/skins/neon/ui/marco.webp');
+  --qm-art-table: url('../assets/skins/neon/ui/mesa.webp');
+  --qm-art-panel: url('../assets/skins/neon/ui/panel.webp');
+  --qm-art-btn1: url('../assets/skins/neon/ui/boton-primario.webp');
+  --qm-art-btn2: url('../assets/skins/neon/ui/boton-peligro.webp');
+  --qm-art-btn3: url('../assets/skins/neon/ui/boton-secundario.webp');
+  --qm-art-corner: url('../assets/skins/neon/ui/esquina.png');
+  --qm-art-divider: url('../assets/skins/neon/ui/divisor.png');
+  --qm-art-life: url('../assets/skins/neon/tokens/vida.png');
+  --qm-art-lost: url('../assets/skins/neon/tokens/perdido.png');
+  --qm-art-bag: url('../assets/skins/neon/tokens/bolsa.png');
+  --qm-art-cup: url('../assets/skins/neon/cup/cubilete-cerrado.png');
+  --qm-art-cup-up: url('../assets/skins/neon/cup/cubilete-levantado.png');
+  --qm-art-emblem: url('../assets/skins/neon/brand/emblema.png');
+  --qm-frame-shade: rgba(5,8,12,.55);
+  --qm-btn1-fg: #8aefff;
+  --qm-btn2-fg: #ff86c4;
+  --qm-btn3-fg: #b9cbd8;
+}
+body[data-qm-skin="neon"] .qm-die {
+  background: center / 118% 118% no-repeat;
+  border-radius: 14%;
+  box-shadow: none;
+  filter: drop-shadow(0 calc(var(--s) * .06) calc(var(--s) * .08) #000b);
+}
+body[data-qm-skin="neon"] .qm-die::before { display: none; }
+body[data-qm-skin="neon"] .qm-die[data-hit] { filter: drop-shadow(0 0 3px var(--qm-accent)) drop-shadow(0 0 1px var(--qm-accent)); outline: 0; }
+body[data-qm-skin="neon"] .qm-die[data-v="1"] { background-image: url('../assets/skins/neon/dice/die-1.png'); }
+body[data-qm-skin="neon"] .qm-die[data-v="2"] { background-image: url('../assets/skins/neon/dice/die-2.png'); }
+body[data-qm-skin="neon"] .qm-die[data-v="3"] { background-image: url('../assets/skins/neon/dice/die-3.png'); }
+body[data-qm-skin="neon"] .qm-die[data-v="4"] { background-image: url('../assets/skins/neon/dice/die-4.png'); }
+body[data-qm-skin="neon"] .qm-die[data-v="5"] { background-image: url('../assets/skins/neon/dice/die-5.png'); }
+body[data-qm-skin="neon"] .qm-die[data-v="6"] { background-image: url('../assets/skins/neon/dice/die-6.png'); }
+body[data-qm-skin="neon"] .qm-die[data-wild] { background-image: url('../assets/skins/neon/dice/die-1-wild.png'); box-shadow: none; }
+body[data-qm-skin="neon"] .qm-die[data-v="0"] { background-image: url('../assets/skins/neon/dice/die-hidden.png'); }
+
+
+/* ---------------------------------------------------------------- arte: ventanas */
+body[data-qm-skin] .qm-dialog .window-header {
+  background: var(--qm-art-header) center / 100% 100% no-repeat, var(--qm-header-bg);
+}
+body[data-qm-skin] .qm-dialog .window-content {
+  background: linear-gradient(var(--qm-frame-shade), var(--qm-frame-shade)), var(--qm-art-frame) 0 0 / auto, var(--qm-bg);
+  background-size: auto, 340px, auto;
+}
+/* esquinas: ornamento girado a las cuatro esquinas */
+body[data-qm-skin] .application.qm-dialog::before,
+body[data-qm-skin] .application.qm-dialog::after,
+body[data-qm-skin] .qm-dialog .window-content::before,
+body[data-qm-skin] .qm-dialog .window-content::after {
+  content: "";
+  position: absolute;
+  width: 42px;
+  height: 42px;
+  background: var(--qm-art-corner) center / contain no-repeat;
+  pointer-events: none;
+  z-index: 3;
+  opacity: .95;
+  filter: drop-shadow(0 2px 2px #000a);
+}
+body[data-qm-skin] .application.qm-dialog::before { top: 30px; left: -3px; }
+body[data-qm-skin] .qm-dialog .window-content::before { top: 30px; right: -3px; transform: scaleX(-1); }
+body[data-qm-skin] .qm-dialog .window-content::after { bottom: -3px; left: -3px; transform: scaleY(-1); }
+body[data-qm-skin] .application.qm-dialog::after { bottom: -3px; right: -3px; transform: scale(-1, -1); }
+body[data-qm-skin] .qm-dialog .window-content { position: static; }
+
+/* ---------------------------------------------------------------- arte: botones (placas) */
+body[data-qm-skin] .qm-dialog button.qm-btn,
+body[data-qm-skin] .qm-btn {
+  background: var(--qm-art-btn1) center / 100% 100% no-repeat;
+  color: var(--qm-btn1-fg);
+  border: 0;
+  padding: .75em 1.3em;
+  min-height: 2.6rem;
+  text-shadow: 0 1px 0 #ffffff22;
+  box-shadow: 0 3px 8px #000a;
+}
+body[data-qm-skin] .qm-btn:is([data-action="lie"], [data-action="doubt"]) { background-image: var(--qm-art-btn2); color: var(--qm-btn2-fg); }
+body[data-qm-skin] .qm-btn:is([data-action="spoton"], [data-action="accept"], [data-action="toggle-gm-view"]) { background-image: var(--qm-art-btn3); color: var(--qm-btn3-fg); }
+
+/* ---------------------------------------------------------------- arte: mesa, divisor, fichas, bote, copa, emblema */
+body[data-qm-skin] .qm-tray-container :is(.my-dice, .all-dice) {
+  background: radial-gradient(125% 150% at 50% 0%, transparent 35%, #000b 100%), var(--qm-art-table) 0 0 / auto;
+  background-size: auto, 300px;
+}
+body[data-qm-skin] .game-status { border-top: 0; position: relative; padding-top: 22px; }
+body[data-qm-skin] .game-status::before {
+  content: "";
+  position: absolute;
+  left: 0; right: 0; top: 2px;
+  height: 20px;
+  background: var(--qm-art-divider) center / contain no-repeat;
+}
+body[data-qm-skin] .qm-lives::after { width: 1.7em; height: 1.7em; border-radius: 0; background: var(--qm-art-life) center / contain no-repeat; box-shadow: none; filter: drop-shadow(0 2px 2px #000a); }
+.qm-tok { display: inline-block; width: 1.5em; height: 1.5em; margin: 0 -.05em; vertical-align: middle; background: var(--qm-art-life) center / contain no-repeat; filter: drop-shadow(0 1px 1px #000a); }
+.qm-tok.lost { background-image: var(--qm-art-lost); opacity: .7; }
+.qm-pips { letter-spacing: 0; white-space: nowrap; }
+body[data-qm-skin] .qm-pot::before { content: ""; width: 1.9em; height: 1.9em; background: var(--qm-art-bag) center / contain no-repeat; filter: drop-shadow(0 2px 2px #000a); }
+.qm-cup { display: block; width: 110px; height: 110px; margin: 0 auto; background: var(--qm-art-cup) center / contain no-repeat; filter: drop-shadow(0 5px 6px #000b); }
+.qm-cup.up { background-image: var(--qm-art-cup-up); }
+body[data-qm-skin] .qm-select-body > header { display: flex; align-items: center; gap: 14px; }
+body[data-qm-skin] .qm-select-body > header::before { content: ""; flex: none; width: 74px; height: 74px; background: var(--qm-art-emblem) center / contain no-repeat; filter: drop-shadow(0 3px 4px #000b); }
+body[data-qm-skin] .chat-message.qm-chat {
+  background: linear-gradient(color-mix(in srgb, var(--qm-chat-bg) 86%, transparent), color-mix(in srgb, var(--qm-chat-bg) 86%, transparent)), var(--qm-art-panel) 0 0 / 280px;
+}

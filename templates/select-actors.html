@@ -1,0 +1,116 @@
+<div class="flexcol qm-select-body">
+<header><h2>{{localize "QM.select.header"}}</h2></header>
+
+<section>
+  <table class="qm-select-table">
+    <thead>
+      <tr>
+        <th>{{localize "QM.select.actor"}}</th>
+        <th style="text-align:center;">{{localize "QM.select.mode"}}</th>
+        <th style="text-align:center;">{{localize "QM.select.cheats"}}</th>
+      </tr>
+    </thead>
+    <tbody>
+    {{#each actors}}
+      <tr>
+        <td class="actor-cell">
+          <img src="{{this.img}}" class="qm-select-actor-img" alt=""/>
+          <span>{{this.name}}</span>
+        </td>
+        <td style="text-align:center;">
+          <select name="actor-{{this.id}}-mode" aria-label="{{this.name}}">
+            <option value="">— {{localize "QM.select.doNotPlay"}} —</option>
+            <option value="humano">{{localize "QM.human"}}</option>
+            <option value="gm">{{localize "QM.mode.gm"}}</option>
+            <option value="ia-basic">{{localize "QM.ai.basic"}}</option>
+            <option value="ia-experta">{{localize "QM.ai.expert"}}</option>
+            <option value="ia-tramposa">{{localize "QM.ai.cheater"}}</option>
+            <option value="ia-farolera">{{localize "QM.ai.bluffer"}}</option>
+            <option value="ia-cauta">{{localize "QM.ai.cautious"}}</option>
+            <option value="ia-observadora">{{localize "QM.ai.observer"}}</option>
+          </select>
+        </td>
+        <td style="text-align:center;">
+          <input type="checkbox" name="actor-{{this.id}}-cheats" aria-label="{{localize "QM.select.cheats"}}: {{this.name}}" disabled>
+        </td>
+      </tr>
+    {{/each}}
+    </tbody>
+  </table>
+
+  <div class="qm-game-options">
+    <div class="form-group">
+      <label for="qm-game"><i class="qm-ico qm-ico-lg" id="qm-game-ico" data-ico=""></i> {{localize "QM.select.game"}}</label>
+      <select id="qm-game" name="game">
+        {{#each games}}<option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>{{/each}}
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="qm-skin">{{localize "QM.settings.skin.name"}}</label>
+      <select id="qm-skin" name="skin">
+        {{#each skins}}<option value="{{this.id}}" {{#if this.selected}}selected{{/if}}>{{this.name}}</option>{{/each}}
+      </select>
+    </div>
+
+    <div data-game="liars-dice" class="qm-game-options-inner">
+    <div class="form-group">
+      <label for="start-dice">{{localize "QM.settings.startDice.name"}}</label>
+      <input type="number" id="start-dice" name="start-dice" min="1" max="20" value="{{startDice}}"/>
+    </div>
+
+    <div class="form-group-stack">
+      <div class="form-group">
+        <label for="qm-ones-wild">{{localize "QM.settings.onesWild.name"}}</label>
+        <input type="checkbox" id="qm-ones-wild" name="qm-ones-wild" {{#if onesWild}}checked{{/if}}>
+      </div>
+      <p class="qm-option-hint">{{localize "QM.settings.onesWild.hint"}}</p>
+    </div>
+
+    <div class="form-group-stack">
+      <div class="form-group">
+        <label for="qm-palifico-rule">{{localize "QM.settings.palifico.name"}}</label>
+        <input type="checkbox" id="qm-palifico-rule" name="qm-palifico-rule" {{#if palificoRule}}checked{{/if}}>
+      </div>
+      <p class="qm-option-hint">{{localize "QM.settings.palifico.hint"}}</p>
+    </div>
+
+    <div class="form-group">
+      <label for="qm-palifico-mode">{{localize "QM.settings.palificoMode.name"}}</label>
+      <select id="qm-palifico-mode" name="qm-palifico-mode">
+        <option value="casa" {{#unless palificoClasico}}selected{{/unless}}>{{localize "QM.rules.house"}}</option>
+        <option value="clasica" {{#if palificoClasico}}selected{{/if}}>{{localize "QM.rules.classic"}}</option>
+      </select>
+    </div>
+    <p class="qm-option-hint">{{localize "QM.settings.palificoMode.hint"}}</p>
+
+    <div class="form-group">
+      <label for="qm-spoton-rule">{{localize "QM.settings.spotOn.name"}}</label>
+      <select id="qm-spoton-rule" name="qm-spoton-rule">
+        <option value="casa" {{#unless spotOnClasica}}selected{{/unless}}>{{localize "QM.rules.house"}}</option>
+        <option value="clasica" {{#if spotOnClasica}}selected{{/if}}>{{localize "QM.rules.classic"}}</option>
+      </select>
+    </div>
+    <p class="qm-option-hint">{{localize "QM.settings.spotOn.hint"}}</p>
+    </div>
+
+    <div data-game="mia" class="qm-game-options-inner">
+      <div class="form-group">
+        <label for="mia-lives">{{localize "QM.mia.lives"}}</label>
+        <input type="number" id="mia-lives" name="mia-lives" min="1" max="10" value="{{lives}}"/>
+      </div>
+      <p class="qm-option-hint">{{localize "QM.mia.livesHint"}}</p>
+    </div>
+
+    <div class="form-group">
+      <label for="qm-ante">{{localize "QM.settings.ante.name"}}</label>
+      <input type="number" id="qm-ante" name="ante" min="0" value="{{ante}}" {{#unless hasCurrency}}disabled{{/unless}}/>
+    </div>
+    <p class="qm-option-hint">{{#if hasCurrency}}{{localize "QM.settings.ante.hint"}}{{else}}{{localize "QM.settings.ante.noPath"}}{{/if}}</p>
+  </div>
+</section>
+
+<footer class="flexrow">
+  <button type="submit" class="qm-btn"><i class="fas fa-play"></i>&nbsp;{{localize "QM.select.startButton"}}</button>
+</footer>
+</div>
