@@ -1,8 +1,8 @@
 {
   "id": "mr-tahures",
   "title": "MR- Tahúres",
-  "description": "Juegos de taberna para Foundry VTT: Dado del Mentiroso y Mia/Meyer, con cinco skins (noir, fantasía oscura, piratas, Oeste y ciberpunk), IA con personalidad, manos privadas y bote con dinero del actor. Agnóstico de sistema.",
-  "version": "3.0.0",
+  "description": "Juegos de dados de taberna para Foundry VTT: Dado del Mentiroso, Mia/Meyer y Diez Mil/Farkle, con cinco skins (noir, fantasía oscura, piratas, Oeste y ciberpunk), IA con personalidad, manos privadas y bote con dinero del actor. Agnóstico de sistema.",
+  "version": "3.1.0",
   "authors": [
     {
       "name": "Manu Romera",

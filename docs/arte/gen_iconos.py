@@ -34,6 +34,8 @@ ACTIONS = {
     "dudar": f'<g {S(6)}><circle cx="26" cy="26" r="17"/><path d="M39 39L56 56" stroke-width="9"/></g>',
     "aceptar": f'<rect {S()} x="9" y="9" width="46" height="46" rx="10"/>'
                f'<circle {F} cx="22" cy="22" r="4.5"/><circle {F} cx="32" cy="32" r="4.5"/><circle {F} cx="42" cy="42" r="4.5"/>',
+    "tirar": die(4, 26, 26, [(0.3, 0.3), (0.7, 0.7)], rot=-14) + die(32, 8, 26, [(0.3, 0.3), (0.5, 0.5), (0.7, 0.7)], rot=16),
+    "plantarse": f'<g {S(4)}><ellipse cx="32" cy="46" rx="20" ry="7"/><path d="M12 46v-10c0 4 9 7 20 7s20-3 20-7v10"/><path d="M12 36v-10c0 4 9 7 20 7s20-3 20-7v10"/><ellipse cx="32" cy="26" rx="20" ry="7"/></g>',
     "anunciar": f'<path {F} d="M6 24h12l24-14v44L18 40H6z"/><path {F} d="M14 40l4 16h9l-4-16z"/>'
                 f'<path {S(4)} d="M48 22c5 6 5 14 0 20M55 14c9 10 9 26 0 36"/>',
 }

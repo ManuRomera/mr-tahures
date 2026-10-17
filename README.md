@@ -42,8 +42,15 @@ Dos dados bajo el cubilete: anuncia lo que has sacado (¡o miente!) y supera sie
   <img src="docs/img/mia.webp" alt="Mia en El Garito: el cubilete se levanta en el chat y el anuncio resulta ser un farol" width="100%">
 </p>
 
+### 🎰 Diez Mil / Farkle
+Seis dados a la vista: tira, **aparta lo que puntúa** (unos, cincos, tríos, escaleras, tres parejas) y decide entre **seguir tirando** o **plantarte** para guardar los puntos del turno. Si ningún dado puntúa, ¡**FARKLE**!: pierdes lo del turno. Con los seis puntuando, dados calientes: vuelves a tirar los seis. Gana quien llega a la meta (10 000 por defecto) tras una última vuelta para los demás. Entrada opcional al tablero (500).
+
+<p align="center">
+  <img src="docs/img/diez-mil.webp" alt="Diez Mil en El Camarote: marcador con barras, dados elegibles iluminados y el chat con cada tirada" width="100%">
+</p>
+
 ### 🗺️ En el plan
-Diez Mil / Farkle · Capitán, Barco y Tripulación · Chuza (Craps) · Siete y media · Tabas · Pulso y concurso de bebida. Los emblemas ya están dibujados y el módulo tiene un **registro de juegos**: añadir uno es un motor de reglas, una vista y una línea de registro (guía en [`docs/JUEGOS.md`](docs/JUEGOS.md)).
+Capitán, Barco y Tripulación · Chuza (Craps) · Siete y media · Tabas · Pulso y concurso de bebida. Los emblemas ya están dibujados y el módulo tiene un **registro de juegos**: añadir uno es un motor de reglas, una vista y una línea de registro (guía en [`docs/JUEGOS.md`](docs/JUEGOS.md)).
 
 ## 🎭 Cinco ambientaciones (skins)
 
@@ -73,7 +80,7 @@ El mismo juego, vestido para cada mesa. Se elige en el propio formulario de part
 1. **GM:** con los actores de la escena en tokens, pulsa el botón de los dados (Controles de token).
 2. Elige **juego**, **skin** y el **modo** de cada actor: Humano, Director de Juego (tú) o una de las IAs. Ajusta dados o vidas iniciales, reglas y la entrada del bote.
 3. Se sortea quién empieza y cada humano recibe su **bandeja** con su mano; el GM ve todas.
-4. En tu turno: **Subir / ¡Mentira! / Calzar** en el Dado del Mentiroso, o **Anunciar / ¡Dudo! / Acepto y tiro** en Mia.
+4. En tu turno: **Subir / ¡Mentira! / Calzar** en el Dado del Mentiroso, **Anunciar / ¡Dudo! / Acepto y tiro** en Mia, o **Tirar / Apartar y tirar / Plantarme** en Diez Mil.
 
 ## 🧰 API
 
@@ -108,7 +115,8 @@ https://github.com/ManuRomera/mr-tahures/releases/latest/download/module.json
 ### Games
 - **Liar's Dice** (Perudo / Dudo): hidden hands, raise / call **Liar!** / **Spot On**, wild ones, Palifico, house or classic rules.
 - **Mia / Meyer:** two dice under the cup, announce (or lie about) something higher; believe and roll, or doubt and lift the cup. Mia (2-1) beats everything and costs two lives.
-- Coming: Farkle, Ship-Captain-Crew, Craps, Siete y media, Knucklebones, Arm-wrestle & drinking contest — the module has a game registry ([`docs/JUEGOS.md`](docs/JUEGOS.md)).
+- **Ten Thousand / Farkle:** six open dice, set aside what scores, roll again or bank; hot dice, straights, three pairs, FARKLE, goal and last round.
+- Coming: Ship-Captain-Crew, Craps, Siete y media, Knucklebones, Arm-wrestle & drinking contest — the module has a game registry ([`docs/JUEGOS.md`](docs/JUEGOS.md)).
 
 ### Five skins
 *The Den* (1930s noir), *The Tavern* (dark fantasy), *The Cabin* (pirates), *The Saloon* (Western) and *The Neon Cantina* (cyberpunk). Picked from the start form or the module settings, shared by the whole table.

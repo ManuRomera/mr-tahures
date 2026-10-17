@@ -7,6 +7,8 @@
 .qm-ico[data-ico="calzar"] { --ico: url("../assets/icons/actions/calzar.svg"); }
 .qm-ico[data-ico="dudar"] { --ico: url("../assets/icons/actions/dudar.svg"); }
 .qm-ico[data-ico="aceptar"] { --ico: url("../assets/icons/actions/aceptar.svg"); }
+.qm-ico[data-ico="tirar"] { --ico: url("../assets/icons/actions/tirar.svg"); }
+.qm-ico[data-ico="plantarse"] { --ico: url("../assets/icons/actions/plantarse.svg"); }
 .qm-ico[data-ico="anunciar"] { --ico: url("../assets/icons/actions/anunciar.svg"); }
 .qm-ico[data-ico="humano"] { --ico: url("../assets/icons/players/humano.svg"); }
 .qm-ico[data-ico="ia"] { --ico: url("../assets/icons/players/ia.svg"); }

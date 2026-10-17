@@ -102,6 +102,21 @@
       <p class="qm-option-hint">{{localize "QM.mia.livesHint"}}</p>
     </div>
 
+    <div data-game="diez-mil" class="qm-game-options-inner">
+      <div class="form-group">
+        <label for="farkle-meta">{{localize "QM.farkle.goalOption"}}</label>
+        <input type="number" id="farkle-meta" name="farkle-meta" min="500" step="500" value="{{farkleMeta}}"/>
+      </div>
+      <div class="form-group">
+        <label for="farkle-entrada">{{localize "QM.farkle.entryOption"}}</label>
+        <select id="farkle-entrada" name="farkle-entrada">
+          <option value="0" {{#unless farkleEntrada500}}selected{{/unless}}>{{localize "QM.farkle.entryNone"}}</option>
+          <option value="500" {{#if farkleEntrada500}}selected{{/if}}>500</option>
+        </select>
+      </div>
+      <p class="qm-option-hint">{{localize "QM.farkle.entryHint"}}</p>
+    </div>
+
     <div class="form-group">
       <label for="qm-ante">{{localize "QM.settings.ante.name"}}</label>
       <input type="number" id="qm-ante" name="ante" min="0" value="{{ante}}" {{#unless hasCurrency}}disabled{{/unless}}/>

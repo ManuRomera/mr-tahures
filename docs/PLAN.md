@@ -57,7 +57,7 @@ Hecho y probado en Foundry 13.351: registro de juegos (`core.js`, `games/*`), se
 
 ## Fase 5 — Juegos de taberna (orden propuesto por coste/valor)
 
-**Hecho:** nº 1, Mia / Meyer (v2.2.0): anuncio con farol, dudar/aceptar, vidas (Mia vale 2), 6 personalidades de IA, bote y manos privadas. Siguiente: Diez Mil / Farkle.
+**Hecho:** nº 1, Mia / Meyer (v2.2.0): anuncio con farol, dudar/aceptar, vidas (Mia vale 2), 6 personalidades de IA, bote y manos privadas. Hecho también: nº 2, Diez Mil / Farkle (v3.1.0). Siguiente: Capitán, Barco y Tripulación.
 
 
 | # | Juego | Por qué | Dominio público |

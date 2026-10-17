@@ -163,11 +163,12 @@ const tokens = (j, S) => '<span class="qm-tok"></span>'.repeat(j.dadosRestantes)
 
 /** Mensaje de situación con botones de GM (los jugadores no los ven: se quitan al pintar). */
 export function statusHtml(S) {
-  const sym = gameOf(S)?.lifeSymbol ?? "●";
+  const def = gameOf(S);
   const lines = S.jugadores.map(j => {
     const icon = j.type === "humano" ? "humano" : j.type === "ia" ? "ia" : "gm";
-    return `<i class="qm-ico" data-ico="${icon}"></i> <b>${esc(j.name)}</b> <span class="qm-pips">${tokens(j, S)}</span>` +
-      ` <button class="qm-btn qm-btn-gm" data-action="gm-remove-die" data-actor-id="${j.actorId}">-1</button>`;
+    const row = def.statusRow ? def.statusRow(j, S) : `<span class="qm-pips">${tokens(j, S)}</span>`;
+    const minus = def.hasLives === false ? "" : ` <button class="qm-btn qm-btn-gm" data-action="gm-remove-die" data-actor-id="${j.actorId}">-1</button>`;
+    return `<i class="qm-ico" data-ico="${icon}"></i> <b>${esc(j.name)}</b> ${row}${minus}`;
   }).join("<br>");
   const gmControls = `<div class="flexrow" style="gap:.5rem; margin-top: 5px;"><button class="qm-btn qm-btn-gm" data-action="gm-end-game">${t("QM.gm.endGame")}</button></div>`;
   const pot = S.pot ? `<br><b>${t("QM.tray.pot")}:</b> ${S.pot}` : "";

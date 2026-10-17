@@ -1,0 +1,68 @@
+<div class="qm-tray-container qm-farkle">
+
+    <section class="qm-board">
+        <header>
+            <h3>{{localize "QM.farkle.board"}}</h3>
+            <span class="qm-meta">{{localize "QM.farkle.goal"}}: {{meta}}</span>
+        </header>
+        {{#each marcador}}
+        <div class="qm-score-row {{#if turno}}is-turn{{/if}}">
+            <span class="qm-score-name">{{name}}{{#if ultima}} <i class="qm-flag" title="{{localize "QM.farkle.reachedGoal"}}">⚑</i>{{/if}}</span>
+            <span class="qm-score-pts">{{puntos}}</span>
+            <span class="qm-score-bar" aria-hidden="true"><i style="width: {{pct}}%"></i></span>
+        </div>
+        {{/each}}
+        {{#if ultimaVuelta}}<p class="qm-last">{{localize "QM.farkle.lastRound"}}</p>{{/if}}
+    </section>
+
+    <section class="my-dice">
+        <header>
+            <h3>{{#if isMyTurn}}{{localize "QM.farkle.yourTurn"}}{{else}}{{turnName}}{{/if}}</h3>
+            <span class="qm-turnpts" title="{{localize "QM.farkle.turnPoints"}}">{{turnoPts}}</span>
+        </header>
+        <div class="dice-area">
+            {{#each mesa}}
+            <button type="button" class="qm-die-btn {{#if selected}}sel{{/if}}" data-action="pick" data-i="{{i}}" aria-pressed="{{#if selected}}true{{else}}false{{/if}}" {{#unless ../elegir}}disabled{{/unless}}>
+                <span class="qm-die" data-v="{{v}}" role="img" aria-label="{{localize "QM.tray.dieAlt" value=v}}"></span>
+            </button>
+            {{else}}
+            <p class="wait-message">{{#if isMyTurn}}{{localize "QM.farkle.rollHint" dice=dadosLibres}}{{else}}{{localize "QM.tray.waitingTurn"}}{{/if}}</p>
+            {{/each}}
+        </div>
+        {{#if apartados.length}}
+        <div class="qm-aside">
+            <small>{{localize "QM.farkle.aside"}}</small>
+            {{#each apartados}}<span class="qm-die qm-die-sm" data-v="{{value}}" role="img" aria-label="{{localize "QM.tray.dieAlt" value=value}}"></span>{{/each}}
+        </div>
+        {{/if}}
+    </section>
+
+    <section class="game-status">
+        {{#if pot}}<div class="qm-pot">{{localize "QM.tray.pot"}}: {{pot}}</div>{{/if}}
+        {{#if isMyTurn}}
+        <div class="actions">
+            {{#if tirar}}
+            <button type="button" class="qm-btn" data-action="roll">
+                <i class="qm-ico" data-ico="tirar"></i> {{localize "QM.farkle.roll" dice=dadosLibres}}
+            </button>
+            {{/if}}
+            {{#if elegir}}
+            <button type="button" class="qm-btn" data-action="keep" {{#unless selValid}}disabled{{/unless}}>
+                <i class="qm-ico" data-ico="subir"></i> {{localize "QM.farkle.keep"}}
+            </button>
+            <button type="button" class="qm-btn" data-action="bank" {{#unless canBank}}disabled{{/unless}}>
+                <i class="qm-ico" data-ico="plantarse"></i> {{localize "QM.farkle.bank"}}
+            </button>
+            {{/if}}
+        </div>
+        {{#if elegir}}
+        <p class="qm-selscore">{{#if selValid}}+{{selScore}}{{else}}{{localize "QM.farkle.pickHint"}}{{/if}}</p>
+        {{/if}}
+        {{else}}
+        <div class="wait-message">
+            <p>{{localize "QM.tray.waitingTurn"}}</p>
+        </div>
+        {{/if}}
+    </section>
+
+</div>

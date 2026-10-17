@@ -8,6 +8,7 @@ import * as core from "./core.js";
 import * as Engine from "./engine/liars-dice.js";
 import "./games/liars-dice.js";
 import "./games/mia.js";
+import "./games/farkle.js";
 
 const { ID, SOCKET, GAMES, DEFAULT_GAME, t, getSession, gameOf, isActiveGM, OWNER } = core;
 const { ApplicationV2, HandlebarsApplicationMixin } = foundry.applications.api;
@@ -82,8 +83,8 @@ class PlayerSelectApp extends HandlebarsApplicationMixin(ApplicationV2) {
 }
 
 /** Botones de acción de las bandejas (data-action); cada juego decide qué significan. */
-function trayAction(event, target) { return this.onAction(target.dataset.action); }
-const ACTIONS = Object.fromEntries(["raise", "lie", "spoton", "doubt", "accept", "announce"].map(a => [a, trayAction]));
+function trayAction(event, target) { return this.onAction(target.dataset.action, target); }
+const ACTIONS = Object.fromEntries(["raise", "lie", "spoton", "doubt", "accept", "announce", "pick", "roll", "keep", "bank"].map(a => [a, trayAction]));
 
 class DiceTrayApp extends HandlebarsApplicationMixin(ApplicationV2) {
   static DEFAULT_OPTIONS = {
@@ -107,11 +108,11 @@ class DiceTrayApp extends HandlebarsApplicationMixin(ApplicationV2) {
     return { session: S, pot: S.pot, ...gameOf(S).trayContext(S, me, core.hands) };
   }
 
-  onAction(action) {
+  onAction(action, target) {
     const S = getSession();
     const ix = S?.jugadores.findIndex(p => p.actorId === this.actorId);
     if (ix == null || ix < 0) return;
-    return gameOf(S).onTrayAction(action, ix, { gm: false });
+    return gameOf(S).onTrayAction(action, ix, { gm: false, target });
   }
 }
 
@@ -132,12 +133,12 @@ class GMDiceTrayApp extends HandlebarsApplicationMixin(ApplicationV2) {
     return { session: S, pot: S.pot, ...gameOf(S).gmContext(S) };
   }
 
-  async onAction(action) {
+  async onAction(action, target) {
     if (action === "toggle-gm-view") return game.settings.set(ID, "gmAsPlayer", !game.settings.get(ID, "gmAsPlayer"));
     const S = getSession();
     const ix = S?.jugadores.findIndex(p => p.type === "gm");
     if (ix == null || ix < 0) return;
-    return gameOf(S).onTrayAction(action, ix, { gm: true });
+    return gameOf(S).onTrayAction(action, ix, { gm: true, target });
   }
 }
 

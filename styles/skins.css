@@ -237,7 +237,7 @@ body[data-qm-skin] .qm-btn {
   box-shadow: 0 3px 8px #000a;
 }
 body[data-qm-skin] .qm-btn:is([data-action="lie"], [data-action="doubt"]) { background-image: var(--qm-art-btn2); color: var(--qm-btn2-fg); }
-body[data-qm-skin] .qm-btn:is([data-action="spoton"], [data-action="accept"], [data-action="toggle-gm-view"]) { background-image: var(--qm-art-btn3); color: var(--qm-btn3-fg); }
+body[data-qm-skin] .qm-btn:is([data-action="spoton"], [data-action="accept"], [data-action="bank"], [data-action="toggle-gm-view"]) { background-image: var(--qm-art-btn3); color: var(--qm-btn3-fg); }
 
 /* ---------------------------------------------------------------- arte: mesa, divisor, fichas, bote, copa, emblema */
 body[data-qm-skin] .qm-tray-container :is(.my-dice, .all-dice) {
